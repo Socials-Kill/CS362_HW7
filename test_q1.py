@@ -2,11 +2,8 @@ import unittest
 import q1
 
 class fizzTest(unittest.TestCase):
-    def test_fizz(capfd):
-        count()
-        out, err = capfd.readouterr()
-        assert out == "fizz"
-
+    def test_fizz(self):
+        self.assertEqual(q1.count(), "fizz")
     
 
 if __name__ == "__main__":
