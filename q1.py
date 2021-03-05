@@ -1,6 +1,8 @@
 def count():
     for x in range (1,101):
         if x % 3 == 0:
-            return "fizz"
+            print("fizz")
+        elif x % 5 == 0:
+            return "buzz"
         else:
             print(x)
